@@ -1,7 +1,54 @@
 body {
   background: #1d1d1d;
+  font-family: 'Varela Round', sans-serif;
 }
 
-.tenzies-container {
-  background: #f9f5ec;
+p {
+  max-width: 20rem;
+  margin: 1.5rem auto;
+}
+h1 {
+  margin-bottom: 0;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #f1eeee;
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 10px;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+}
+
+.die {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.roll-button {
+  width: 150px;
+  margin: 1.5rem auto;
+  padding: .5rem;
+  background-color: #9585A1;
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 4px;
 }
