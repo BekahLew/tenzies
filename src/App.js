@@ -15,6 +15,7 @@ function App() {
             if (die.value === dice[0].value) {
                 return true;
             }
+            return null;
         });
         if (allHeld && allSameValue) {
             setTenzies(true);
@@ -70,6 +71,7 @@ function App() {
                     setTenzies(false);
                     return generateNewDice();
                 }
+                return null;
             })
         );
     }
